@@ -1,0 +1,13 @@
+.form{
+    margin-top: 50px;
+    max-width:400px;
+padding: 20px;
+background-color: blueviolet;
+border-radius: 10px;
+box-shadow: 10px 10px 20px brown;
+}
+.form input,.form textarea{
+    margin-bottom: 10px;
+    width: 80%;
+    padding-left: 10px;
+}
