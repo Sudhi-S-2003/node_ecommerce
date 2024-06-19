@@ -1,0 +1,16 @@
+body{
+    min-height: 100vh;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100vw;
+}
+
+#element2,#element3,#element4,#element5{
+    display: none;
+}
+.code-snippet{
+    max-width: 700px;
+}

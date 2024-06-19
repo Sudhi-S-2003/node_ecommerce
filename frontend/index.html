@@ -9,19 +9,59 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+     <!-- Navbar -->
+     <nav class="navbar  navbar-expand-md navbar-light bg-dark  me-auto fixed-top ">
+        <div class="container-fluid ">
+            <a class="navbar-brand ms-5" href="#home">
+                <h2 class="text-primary">E-commerce</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ms-auto me-5  hover-underline-animation">
+                 
+          <li class="nav-item ">
+            <a class="nav-link text-white" aria-current="page" href="index.html">
+              <h4>Home</h4>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-white" aria-current="page" href="Product.html">
+              <h4>Products</h4>
+            </a>
+          </li>                    
+
+                </ul>
+            </div>
+        </div>
+</div>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<!-- End of Navbar -->
     <div class="container">
         <div class="container form">
+            <span></span>
             <h1>Add Product</h1>
-            <input type="text" placeholder="Product name" name="name">
-            <input type="number" placeholder="Price" name="price">
-            <input type="file" placeholder="Image" name="image">
-            <textarea name="desc" id="" placeholder="Description"></textarea>
-            <input type="number"placeholder="Enter quality" name="quality">
-            <button class="btn btn-primary">Add Product</button>
+            <form id="productForm" enctype="multipart/form-data">
+                <input type="text" id="productName" name="name" placeholder="Product Name" required>
+                <input type="number" id="price" name="price" placeholder="Price" required>
+                <textarea id="description" name="description" placeholder="Description" rows="4" required></textarea>
+                <input type="number" id="quantity" name="quantity" placeholder="Quantity" required>
+                <input type="file" id="image" name="image"  required>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            
         </div>
     </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
