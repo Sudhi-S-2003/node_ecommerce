@@ -4,9 +4,8 @@ function createProduct(event) {
     const form = document.querySelector('#productForm');
     const formData = new FormData(form);
 
-    console.log(formData); // Check if FormData is correctly populated
-
-    // Send formData to server using fetch
+    console.log(formData); 
+    //  fetch
     fetch('http://localhost:3000/api/product', {
         method: 'POST',
         body: formData
@@ -20,15 +19,12 @@ function createProduct(event) {
     .then(data => {
         console.log('Success:', data);
         form.reset(); // Clear the form fields
-        // Optionally, show a success message to the user
     })
     .catch(error => {
         console.error('Error:', error);
-        // Handle errors and display them to the user
     });
 }
 
-// Event listener for form submission
 const form = document.querySelector('#productForm');
 form.addEventListener('submit', createProduct);
 

@@ -43,7 +43,7 @@ app.post('/api/product', upload.single('image'), async (req, res) => {
                 };
 
         const product = await Product.create(productData);
-        res.s.tatus(200).json(product);
+        res.status(200).json(product);
     } catch (error) {
         res.status(500).json({ message: error.message });
     }
@@ -109,7 +109,7 @@ mongoose.connect('mongodb+srv://sudhielampa19:ytzey32hUINF4nGx@cluster0.d9zf5uk.
     console.error('Error connecting to MongoDB:', error);
 });
 // Start server
-const port = 3000;
+const port = 8000;
 app.listen(port, () => {
     console.log(`Server is running on port http://localhost:${port}`);
 });
