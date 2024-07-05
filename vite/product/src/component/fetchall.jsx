@@ -2,6 +2,8 @@ import { useState ,useEffect} from 'react'
 import axios from 'axios'
 import Card from './card.jsx'
 import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+
 function App() {
   const [product,fetchProduct]=useState([])
     const fetchinfo =()=>{
@@ -24,6 +26,8 @@ function App() {
     <>
      <Container>
     <h1 className='text-center text-primary '>Product List</h1>
+    <Container>
+      <Row>
      {
         product.map((product) => {
             return (
@@ -31,6 +35,10 @@ function App() {
                 
             )
         })}
+       
+      </Row>
+    </Container>
+
 </Container>
     </>
 
