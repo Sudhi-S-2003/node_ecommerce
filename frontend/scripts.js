@@ -6,7 +6,7 @@ function createProduct(event) {
 
     console.log(formData); 
     //  fetch
-    fetch('http://localhost:3000/api/product', {
+    fetch('http://localhost:8000/api/product', {
         method: 'POST',
         body: formData
     })

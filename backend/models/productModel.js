@@ -13,7 +13,7 @@ const ProductSchema = mongoose.Schema(
         },
         quantity : {
             type: Number,
-            default: 0
+            default: 1
         },
         description : {
             type: String,

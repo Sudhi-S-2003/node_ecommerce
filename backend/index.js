@@ -43,7 +43,7 @@ app.post('/api/product', upload.single('image'), async (req, res) => {
                 };
 
         const product = await Product.create(productData);
-        res.status(200).json(product);
+        res.status(201).json(product);
     } catch (error) {
         res.status(500).json({ message: error.message });
     }
