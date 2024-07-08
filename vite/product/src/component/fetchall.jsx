@@ -3,6 +3,7 @@ import axios from 'axios'
 import Card from './card.jsx'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import Banner from './banner.jsx'
 
 function App() {
   const [product,fetchProduct]=useState([])
@@ -24,7 +25,9 @@ function App() {
   return (
     
     <>
+    <Banner/>
      <Container>
+      
     <h1 className='text-center text-primary '>Product List</h1>
     <Container>
       <Row>

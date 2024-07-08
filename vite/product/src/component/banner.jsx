@@ -1,34 +1,26 @@
+import 'bootstrap/dist/css/bootstrap.css'; 
 import Carousel from 'react-bootstrap/Carousel';
-import ExampleCarouselImage from 'components/ExampleCarouselImage';
+import lap from "../assets/lap.jfif"
 
-function IndividualIntervalsExample() {
-  return (
-    <Carousel>
-      <Carousel.Item interval={1000}>
-        <ExampleCarouselImage text="First slide" />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item interval={500}>
-        <ExampleCarouselImage text="Second slide" />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <ExampleCarouselImage text="Third slide" />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
-  );
+export default function App() { 
+return ( 
+	<div style={{ display: 'block', width: '100%' }}> 
+	<Carousel> 
+		<Carousel.Item interval={1500}> 
+		<img className="d-block w-100" style={{height:"600px"}} src={lap} alt="Image One"/> 
+		<Carousel.Caption> 
+			<h3>Label for first slide</h3> 
+			<p>Sample Text for Image One</p> 
+		</Carousel.Caption> 
+		</Carousel.Item> 
+		<Carousel.Item interval={500}> 
+		<img className="d-block w-100" style={{height:"600px"}} src={lap} alt="Image One"/> 
+		<Carousel.Caption> 
+			<h3>Label for second slide</h3> 
+			<p>Sample Text for Image Two</p> 
+		</Carousel.Caption> 
+		</Carousel.Item> 
+	</Carousel> 
+	</div> 
+); 
 }
-
-export default IndividualIntervalsExample;

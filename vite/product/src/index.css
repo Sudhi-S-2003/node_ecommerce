@@ -1,0 +1,10 @@
+body::-webkit-scrollbar{
+display: none;
+}
+#banner{
+    height: 75vh;
+}
+#root{
+    background-color: rgb(240, 226, 226);
+    min-height: 100vh;
+}
